@@ -1,0 +1,32 @@
+[
+{
+   "etunimi":"Kaori",
+   "sukunimi":"Icho",
+   "ikä":38,
+   "saavutukset":[
+      {
+         "olympialaiset":"Rio De Janeiro",
+         "maa":"Brasilia",
+         "sijoitus":"kulta",
+         "painoluokka":"57 kg",
+         "vuosi":2016
+      }
+   ],
+   "aktiivi":false
+},
+{
+   "etunimi":"Helen",
+   "sukunimi":"Maroulis",
+   "ikä":32,
+   "saavutukset":[
+    {
+      "olympialaiset":"Rio De Janeiro",
+      "maa":"Brasilia",
+      "sijoitus":"kulta",
+      "painoluokka":"53 kg",
+      "vuosi":2016
+       }
+    ],
+   "aktiivi":true
+}
+]
